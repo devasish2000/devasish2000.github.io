@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Word Guessing Game</title>
+  
+  
+   <style>
+     .main{
+		background-image: url(assets/images/game.jpg);
+
+        background-repeat: no-repeat;
+		border: 3px solid #3bc592;
+        padding: 10px 10px;
+     }
+   </style>
+  
+  
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-12">
+        <div class="text-center">
+          <h1 class="text-warning">Word Guessing Game</h1>
+        </div>
+      </div>
+     
+    </div>
+    <br><br>
+    <div class="row">
+      
+      <div class="col-md-12 text-center border border-danger main">
+       
+		<button class='btn btn-warning'>
+   <i class="fa fa-pencil"></i> Press any key to play!
+</button>
+        <div>Wins:</div>
+        <div id="wins"></div>
+        <br>
+        <div>Word:</div>
+        <div id="word-display"></div>
+        <br>
+        <div>Guesses left:</div>
+        <div id="guesses-left"></div>
+        <br>
+        <div>Already guessed:</div>
+        <div id="already-guessed"></div>
+      </div>
+    </div>
+
+  </div>
+  
+  
+
+  
+
+<script>
+
+// the computer will pick a random word 
+var userOptions = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var computerOptions = ["rahul", "aman", "saurabh", "priyanka","soru","gulguli"];
+var computerChoice = computerOptions[Math.floor(Math.random() * computerOptions.length)];
+
+// for verifying functionality
+console.log("Computer choice: " + computerChoice);
+
+// setting up variables
+var numWins = 0;
+var attempts = 12;
+
+// this array will store the letters already guessed
+var guesses = [];
+
+// this array will store the hidden word
+var hiddenWord = [];
+
+// this array will hold the computer word to check for a win
+var computerWord = [];
+
+// this function will reset the game after a win or loss
+function resetGame() {
+    console.log("------------------------------------------------");
+
+    attempts = 12;
+    attemptsText.textContent = attempts;
+
+    guesses = [];
+    guessesText.textContent = guesses;
+
+    // picking a new word from the array
+    computerChoice = computerOptions[Math.floor(Math.random() * computerOptions.length)];
+    console.log("Computer choice: " + computerChoice);
+
+    // resetting arrays for comparison
+    hiddenWord = [];
+    computerWord = [];
+
+    for (var i = 0; i < computerChoice.length; i++) {
+        hiddenWord.push("-");
+    }
+    wordDisplay.textContent = hiddenWord.join("");
+    
+    for (var i = 0; i < computerChoice.length; i++) {
+        computerWord.push(computerChoice[i]);
+    }
+
+    return attempts, guesses, computerChoice, hiddenWord, computerWord;
+}
+
+// function to check if hiddenWord and computerWord are identical
+function checkArrays(arr1, arr2) {
+    if (arr1.length !== arr2.length) {
+        return false;
+    }
+    for (var i = 0; i < arr1.length; i++) {
+        if (arr1[i] !== arr2[i]) {
+            return false;
+        } 
+    }
+    return true;
+}
+
+
+// assigning variables to the HTML elements we're changing
+var winsText = document.getElementById("wins");
+var wordDisplay = document.getElementById("word-display");
+var attemptsText = document.getElementById("guesses-left");
+var guessesText = document.getElementById("already-guessed");
+
+
+for (var i = 0; i < computerChoice.length; i++) {
+    hiddenWord[i] = "-";
+}
+wordDisplay.textContent = hiddenWord.join("");
+
+for (var i = 0; i < computerChoice.length; i++) {
+    computerWord[i] = computerChoice[i];
+}
+
+document.onkeyup = function(event) {
+    var letter = event.key.toLowerCase();
+
+   
+    if ((userOptions.indexOf(letter) > -1) && (guesses.indexOf(letter) < 0)) {
+    
+        if (computerWord.indexOf(letter) > -1) {
+           
+            for (var i = 0; i < computerWord.length; i++) {
+                if (letter == computerWord[i]) {
+                    hiddenWord[i] = letter;
+                    wordDisplay.textContent = hiddenWord.join("");
+                }
+            }
+
+        
+            guesses += letter;
+            guessesText.textContent = guesses;
+        } else {
+          
+            attempts -= 1;
+            attemptsText.textContent = attempts;
+
+           
+            guesses += letter;
+            guessesText.textContent = guesses;
+        }
+
+        
+        if (checkArrays(hiddenWord, computerWord)) {
+            numWins += 1;
+            winsText.textContent = numWins;
+            displayPhoto(computerChoice);
+            resetGame();
+        }
+      
+        if (attempts === 0) {
+            resetGame();
+        }
+    }
+}
+
+</script>
+
+</body>
+
+</html>
