@@ -1,0 +1,44 @@
+body {
+background-color: whitesmoke;
+}
+ 
+.crystal-image {
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+}
+ 
+.bkg {
+  text-align: center;
+   /* For browsers that do not support gradients */
+  border: solid 1px lavender; background-color: aliceblue;
+}
+ 
+ 
+.bkg h1, .bkg h2 {
+  font-family: 'Playfair Display', serif;
+  color: purple;
+  font-weight: bold;
+}
+ 
+.bkg h2, h2, ol {
+  font-family: 'Raleway', sans-serif;
+}
+ 
+.rules h2{
+  padding-left: 25px;
+  text-decoration: underline;
+}
+ 
+.panel {
+  border: solid 1px lavender;
+  background-color: aliceblue;
+}
+ 
+li {
+  line-height: 200%;
+  width: 95%;
+}
+ 
+.game {text-align: center; }
+.scores {padding: 10px;}
