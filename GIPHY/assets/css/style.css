@@ -1,0 +1,67 @@
+body {
+	margin: 20px;
+	background-color: #c8d8b4;
+}
+
+h1 {
+	text-shadow: 1px 1px white;
+	font-weight: bold;
+}
+
+button {
+  background-color: #e21f67;
+  color: white;
+  margin: 5px;
+  padding: 3px 15px;
+}
+
+#buttons {
+	margin-top: 20px;
+}
+
+p {
+	color: white;
+	margin-top: 30px;
+	line-height: 2px;
+}
+
+form {
+	color: white;
+	padding: 15px;
+	width: 910px;
+}
+
+#add-animal {
+	background-color: blue;
+	color: white;
+	margin-top: 10px;
+	padding: 3px 15px;
+}
+
+h6 {
+	color: white;
+	font-weight: normal;
+	margin-left: 5px;
+	margin-top: 20px;
+}
+
+.item {
+	margin-right: 20px;
+}
+
+.gif {
+	  border: 3px solid #e21f67;
+}
+
+
+@media screen and (max-width: 640px) {
+
+	h6 {
+		margin-top: 30px;
+	}
+
+	form {
+		margin-top: 20px;
+	}
+
+}
