@@ -1,0 +1,14 @@
+h1 {
+	font-weight: bold;
+}
+
+
+
+img {
+	border: 3px solid white;
+}
+
+.btn.btn-primary {
+	text-shadow: .25px .25px #F70201;
+	border: 1.25px solid #F70201;
+}

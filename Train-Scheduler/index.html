@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Train Scheduler</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Firebase Reference -->
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+		
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<!-- Moment.js Reference -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://use.fontawesome.com/8c1fdea402.js"></script>
+	<script>
+
+	function isNumberKey(evt)
+		{
+
+		  var charCode = (evt.which) ? evt.which : event.keyCode;
+		 console.log(charCode);
+			if(charCode == 45){
+			return false;
+
+			}
+			if (charCode != 46 && charCode != 45 && charCode > 31 
+			&& (charCode < 48 || charCode > 57))
+			 return false;
+
+		  return true;
+		}
+	
+	</script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h1>Train Scheduler</h1>
+				<h4>Current Time: <span id="timer"></span></h4>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+	  <div class="row">
+	  <div class="col-md-4 px-0">
+		<div class="card mb-3">
+			<h5 class="card-header">Add New Train Information</h5>
+			<div class="card-body">
+				<form>
+					<div class="form-group">
+					<label for="trainname-input" class= "font-weight-bold">Train Name</label>
+					<input type="text" class="form-control" id="trainname-input" aria-describedby="emailHelp">
+					</div>
+					<div class="form-group">
+					<label for="destination-input" class= "font-weight-bold">Destination</label>
+					<input type="text" class="form-control" id="destination-input">
+					</div>
+					
+					<div class="form-group">
+					<label for="firsttime-input" class= "font-weight-bold">First Train Time (HH:mm - military time)</label>
+					<input data-format=" hh:mm" type="text" class="form-control" id="firsttime-input">
+					</div>
+					<div class="form-group">
+					<label for="frequency-input" class= "font-weight-bold">Frequency (min)</label>
+					<input type="text" class="form-control" id="frequency-input" onkeypress="return isNumberKey(event);">
+					</div>
+				
+
+					<button type="submit" class="btn btn-success rounded-0 "id="add-train">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	  
+	  
+		<div class="card col-md-8">
+			<h5 class="card-header">Current Train Schedule</h5>
+			<div class="card-body">
+			<table class="table table-responsive" id="train-table">
+				<thead>
+					<tr>
+						<th>Delete</th>
+						<th>Train Name</th>
+						<th>Desitination</th>
+						<th>Frequency (min)</th>
+						<th>Next Arrival</th>
+						<th>Minutes Away</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+			</div>
+		</div>
+		
+		
+
+		
+		
+		</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="assets/javascript/logic.js">
+	</script>
+
+</body>
+</html>
