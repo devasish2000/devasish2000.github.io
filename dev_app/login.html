@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://time2hack.com/favicon.png" type="image/png">
+  <link rel="icon" href="https://time2hack.com/favicon.png" type="image/png">
+  <title>mobile application</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body class="auth-false">
+<!------ Include the above in your HEAD tag ---------->
+ <div class="container">
+    <header class="clearfix">
+      <h1>Mobile Application</h1>
+      <div class="userAuth unauthenticated pull-right">
+       
+        
+      </div>
+      <div class="userAuth authenticated pull-right">
+        
+        <button type="button" class="btn btn-success" id="logout">Logout</button>
+      </div>
+    </header>
+    <hr/>
+    <main class="authenticated">
+      <center>
+	    <a href="https://dashboard.stripe.com/login" class="btn btn-info" title="login" role="button">Payment</a>
+		<a href="../location/appt.html" class="btn btn-info" title="login" role="button"><i class="fa fa-calendar" aria-hidden="true"></i>Appointments</a>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="../location/location.html">Store Locator</button>
+      </center>
+      <div id="contacts"></div>
+    </main>
+  </div>
+   <div  id="loginModal"  class="col-md-12">
+    
+        <form id="loginForm" method="POST">
+<section class="testimonial py-5" id="testimonial">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4 py-5 bg-primary text-white text-center ">
+                <div class=" ">
+                    <div class="card-body">
+                        <img src="http://www.ansonika.com/mavia/img/registration_bg.svg" style="width:30%">
+                        <h2 class="py-3">Login</h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 py-5 border">
+                <h4 class="pb-4">Please fill with your details</h4>
+                <form>
+                    
+                    <div class="form-row">
+                        
+                        <div class="form-group col-md-6">
+                                  
+                                  <label for="recipient-name" class="control-label">Email:</label>
+              <input type="text" class="form-control" id="loginEmail"></div>
+                       
+						<div class="form-group col-md-6">
+                           <label for="message-text" class="control-label">Password:</label>
+              <input type="password" class="form-control" id="loginPassword">
+                        </div>
+                       
+                    </div>
+					
+                        <div class="form-row">
+                       
+					    <button type="submit" class="btn btn-primary" id="doLogin">Login</button>
+						<a href="https://dashboard.stripe.com/login" target="_blank" class="btn btn-info" title="login" role="button">Forget Password</a>
+                    </div>
+                    </div>
+                  
+                    
+                   
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  <!-- Contacts Store JavaScript -->
+  <script src="./script.js"></script>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+

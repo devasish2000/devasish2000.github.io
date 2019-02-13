@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://time2hack.com/favicon.png" type="image/png">
+  <link rel="icon" href="https://time2hack.com/favicon.png" type="image/png">
+  <title>mobile application</title>
+
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" />
+  <link rel="stylesheet" href="./style2.css">
+  <link rel="stylesheet" href="../gui/assets/css/style2.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../gui/assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../gui/assets/css/style-reg.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+</head>
+
+<body class="auth-false">
+  <div class="container">
+    <header class="clearfix">
+      <div class="wrapper">
+        <!-- Header area -->
+        <div class="jumbotron jumbotron-fluid header">
+
+            <h1 class="display-6"><strong>quemador</strong></h1>
+
+          <div class="container">
+            <h1 class="display-3">
+
+              <!-- logo area -->
+              <div id="png" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 224 224" style="mix-blend-mode: normal">
+                <img src="../gui/assets/images/Quemadorlogo.png" class="png.Img"></div>
+              <p class="lead">We got you covered while your device is being repaired!</p>
+              <h5 class="currentTime"></h5>
+            </h1>
+          </div>
+
+
+    </header>
+    <hr />
+
+  </div>
+  <div class="container">
+    <div class="row">
+      <div id="messageModal">
+
+
+
+
+        <!-- Fixed Action Button  -->
+        <div class="fixed-action-btn vertical" style="bottom: 45px; right: 24px;">
+          <a href="../dev_app/registration.html" class="waves-effect waves-light btn-floating btn-large black tooltipped"
+            data-position="left" data-tooltip="Account"><i class="material-icons">account_circle</i>
+
+          </a>
+          <ul>
+            <li><a href="../location/location.html" class="waves-effect waves-light btn-floating btn-large black tooltipped"
+                data-position="left" data-tooltip="Location"><i class="material-icons">location_on</i></a></li>
+            
+                <li><a href="../location/appt.html" class="waves-effect waves-light btn-floating btn-large black tooltipped"
+                data-position="left" data-tooltip="Calendar"><i class="material-icons">date_range</i></a></li>
+            
+                <li><a href="../gui/index.html"class="waves-effect waves-light btn-floating btn-large black tooltipped" data-position="left"
+                data-tooltip="About Us"><i class="material-icons">child_care</i></a></li>
+          </ul>
+        </div>
+
+
+
+
+
+
+
+        <div class="modal-footer">
+          <div class="pre-auth">
+
+            <span class="">
+              <a href="index.html" class="btn btn-info" title="login" role="button">Registration</a>
+              <a href="login.html" class="btn btn-info" title="login" role="button">Login</a>
+            </span>
+          </div>
+          <div class="post-auth"></div>
+        </div>
+
+      </div>
+      <div id="registerModal" class="col-md-12">
+
+        <form id="registerForm" method="POST">
+          <section class="testimonial py-5" id="testimonial">
+            <div class="container">
+              <div class="row ">
+                <div class="col-md-4 py-5 bg-primary text-white text-center ">
+                  <div class=" ">
+                    <div class="card-body">
+                      <img src="http://www.ansonika.com/mavia/img/registration_bg.svg" style="width:30%">
+                      <h2 class="py-3">Registration</h2>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8 py-5 border">
+                  <h4 class="pb-4">Please fill with your details</h4>
+                  <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-4">
+                        <label for="recipient-name" class="control-label">First Name:</label>
+                        <input type="text" class="form-control" id="registerFirstName" onkeypress="return lettersOnly(event)">
+                        <div class="error" id="fname_error"></div>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="recipient-name" class="control-label">Last Name:</label>
+                        <input type="text" class="form-control" id="registerLastName">
+                        <div class="error" id="lname_error"></div>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="recipient-name" class="control-label">Email:</label>
+                        <input type="text" class="form-control" id="registerEmail">
+                        <div class="error" id="email_error"></div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+
+                      <div class="form-group col-md-6">
+
+                        <label for="message-text" class="control-label">Password:</label>
+                        <input type="password" class="form-control" id="registerPassword">
+                        <div class="error" id="pasword_error"></div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="message-text" class="control-label">Confirm Password:</label>
+                        <input type="password" class="form-control" id="registerConfirmPassword">
+                        <div id="confirm_password_error" class="error"></div>
+                      </div>
+
+                    </div>
+                    <div class="form-row">
+
+                      <div class="form-group col-md-4">
+
+                        <label for="zip">Zip</label>
+                        <input type="text" class="form-control" id="zipcode" placeholder="Enter Zip Code">
+                        <div id="zipcode" class="error"></div>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="Enter City">
+                        <div id="city" class="error"></div>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="email">State</label>
+                        <input type="text" class="form-control" id="state" placeholder="Enter State">
+                        <div id="state" class="error"></div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <button type="submit" class="btn btn-primary" id="doRegister">Register</button>
+
+
+
+                    </div>
+                </div>
+
+
+
+        </form>
+      </div>
+    </div>
+    </section>
+    </form>
+  </div>
+
+  </div>
+
+
+
+  </div>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+  <!-- Contacts Store JavaScript -->
+  <script src="./script.js"></script>
+</body>
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#zipcode").blur(function () {
+      var id = $(this).val();
+      var len = id.length;
+      var places;
+      if (len > 5) {
+        alert("Please enter correct zipcode");
+        $('#city').css('display', 'none');
+        $('#state').css('display', 'none');
+        return false;
+      }
+      $.ajax({
+        //url: "https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyB_gKwqaP7Ffsnlb3dWRYIwTqekBFVkLg8&address=" + id,
+        url: "https://api.zippopotam.us/us/" + id,
+        cache: false,
+        dataType: "json",
+        type: "GET",
+        success: function (result, success) {
+          //var text = JSON.stringify(response);
+
+          var places = result['places'][0];
+          var city = places['place name'];
+          var state = places['state'];
+
+
+          $("#city").val(city);
+          $("#state").val(state);
+          $('#city_error').html("");
+          $('#state_error').html("");
+          $('#city').css('display', 'block');
+          $('#state').css('display', 'block');
+
+        },
+        error: function (errorThrown) {
+          $('#city').css('display', 'none');
+          $('#state').css('display', 'none');
+          $('#city_error').html("City not found for zipcode");
+          $('#state_error').html("State not found for zipcode");
+        }
+
+
+
+
+      });
+
+
+    });
+
+  });
+
+
+  /****************validation*************************/
+  $(document).ready(function () {
+    $("#registerFirstName").blur(function () {
+      var fname = $("#registerFirstName").val();
+      var len = fname.length;
+      if (len == "" || len < 3) {
+        $('#fname_error').show();
+        $('#fname_error').html('First Name must contains min 3 character.');
+      } else {
+        $('#fname_error').hide();
+
+      }
+
+    });
+  });
+
+  $("#registerLastName").blur(function () {
+    var lname = $("#registerLastName").val();
+    var len = lname.length;
+    if (len == "" || len < 3) {
+      $('#lname_error').show();
+      $('#lname_error').html('Last Name must contains min 3 character.');
+    } else {
+      $('#lname_error').hide();
+
+    }
+
+  });
+
+  $("#registerEmail").blur(function () {
+    var email = $("#registerEmail").val();
+    var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if (!regex.test(email)) {
+      $('#email_error').show();
+      $('#email_error').html('Email ID is not Correct.');
+
+    } else {
+      $('#email_error').hide();
+
+    }
+  });
+
+
+
+  $("#zipcode").blur(function () {
+    var address = $("#zipcode").val();
+    var len = address.length;
+    if (len == "" || len < 5) {
+      $('#zipcode_error').show();
+      $('#zipcode_error').html('Pincode filed not be blank.');
+    } else {
+      $('#zipcode_error').hide();
+
+    }
+
+  });
+
+
+  $("#registerPassword").blur(function () {
+    var password = $("#registerPassword").val();
+    var len = password.length;
+    if (len == "" || len < 8) {
+      $('#pasword_error').show();
+      $('#pasword_error').html('Password must contains min 8 charactor.');
+    } else {
+      $('#pasword_error').hide();
+
+    }
+
+  });
+
+
+  $("#registerConfirmPassword").blur(function () {
+    var password1 = $("#registerPassword").val();
+    var password2 = $("#registerConfirmPassword").val();
+
+    if (password1 != password2) {
+      $('#confirm_password_error').show();
+      $('#confirm_password_error').html('Password and confirm password not matched.');
+    } else {
+      $('#confirm_password_error').hide();
+
+    }
+
+  });
+
+
+
+
+  function lettersOnly(evt) {
+    evt = (evt) ? evt : event;
+    var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode :
+      ((evt.which) ? evt.which : 0));
+    if (charCode > 31 && (charCode < 65 || charCode > 90) &&
+      (charCode < 97 || charCode > 122)) {
+
+      return false;
+    }
+    return true;
+  }
+</script>
