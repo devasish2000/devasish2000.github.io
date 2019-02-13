@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Repair Locator</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
+      rel="stylesheet"
+    />
+
+    <!-- Mapbox plugin -->
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js"></script>
+
+    <!-- Mapbox styles -->
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <!-- Geocoder plugin -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.0.1/mapbox-gl-geocoder.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.0.1/mapbox-gl-geocoder.css"
+      type="text/css"
+    />
+
+    <!-- Turf.js plugin -->
+    <script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
+    
+
+    <!-- Custom map styles -->
+    <link rel="stylesheet" href="location.css" type="text/css" />
+  </head>
+
+  <body>
+
+
+    <div class="container">
+      <div class="topnav">
+          <button class="nav top"><h4>Account</h4></button>
+          <button class="nav top"><h4>Schedule a Repair</h4></button>
+          <button class="nav top"><h4>Locations</h4></button>
+      </div>
+      <div class="sidebar">
+        <div class="heading">
+          <h1>Our locations</h1>
+        </div>
+        <div id="listings" class="listings"></div>
+      </div>
+
+      <div id="map" class="map"></div>
+    </div>
+
+  </body>
+  
+  <!-- Custom map logic -->
+  <script src="location.js"></script>
+</html>
