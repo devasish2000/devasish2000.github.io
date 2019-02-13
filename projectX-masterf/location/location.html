@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>Store Locator</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+  <!-- Link to reset CSS to zero out browser defaults -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" />
+  <link rel="stylesheet" type="text/css" href="/gui/assets/css/style2.css">
+  <link rel="stylesheet" type="text/css" href="/location/location.css">
+  <link rel="stylesheet" type="text/css" href="/gui/assets/css/style.css">
+
+	<!--Import Google Icon Font-->
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+	<!-- Link to Bootstrap 4 Beta CSS CDN -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+	 crossorigin="anonymous">
+
+	<!-- Link to Font Awesome CSS CDN for Glpyhicons -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	 crossorigin="anonymous">
+
+  <!-- Mapbox plugin -->
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js"></script>
+
+  <!-- Mapbox styles -->
+
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css" rel="stylesheet" />
+
+  <!-- Geocoder plugin -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.0.1/mapbox-gl-geocoder.js"></script>
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.0.1/mapbox-gl-geocoder.css"
+    type="text/css" />
+
+  <!-- Turf.js plugin -->
+  <script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+  <!-- Custom map styles -->
+  <link rel="stylesheet" href="location.css" type="text/css" />
+</head>
+
+<body>
+
+  
+            <div class="jumbotron jumbotron-fluid header">
+              
+              <h1 class="display-6"><strong>quemador</strong></h1>
+
+              <div class="container">
+           <!-- logo area -->
+                <div id="png" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 224 224" style="mix-blend-mode: normal">
+                  <img src="../gui/assets/images/Quemadorlogo.png" class="png.Img"></div>
+                <p class="lead">We got you covered while your device is being repaired!</p>
+                
+              </div>
+
+
+        
+
+
+      </div>
+      <!-- Fixed Action Button  -->
+      <div class="fixed-action-btn vertical" style="bottom: 45px; right: 24px;">
+        <a href="../dev_app/registration.html" class="waves-effect waves-light btn-floating btn-large black tooltipped"
+          data-position="left" data-tooltip="Account"><i class="material-icons">account_circle</i>
+
+        </a>
+        <ul>
+          <li><a href="../location/location.html" class="waves-effect waves-light btn-floating btn-large black tooltipped"
+              data-position="left" data-tooltip="Location"><i class="material-icons">location_on</i></a></li>
+          
+              <li><a href="../location/appt.html" class="waves-effect waves-light btn-floating btn-large black tooltipped"
+              data-position="left" data-tooltip="Calendar"><i class="material-icons">date_range</i></a></li>
+          
+              <li><a href="../gui/index.html"class="waves-effect waves-light btn-floating btn-large black tooltipped" data-position="left"
+              data-tooltip="About Us"><i class="material-icons">child_care</i></a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar">
+        <div class="heading">
+          <h1>Our locations</h1>
+        </div>
+        <div id="listings" class="listings"></div>
+      </div>
+
+      <div id="map" class="map"></div>
+    </div>
+
+</body>
+
+<!-- Firebase plugin -->
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+
+<!-- Custom map logic -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+  crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+
+<script src="location.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>

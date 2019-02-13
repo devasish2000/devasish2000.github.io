@@ -1,0 +1,134 @@
+/* 
+	This is where our own custom CSS will live 
+	in case we need to overwrite Bootstrap
+
+	colors to use 
+	
+	Permanent Geranium Lake: #D82E26
+	Egyptian Blue: #1034A6
+	Very Dark Blue: #003152 
+	
+*/
+
+
+/* Google Font Pathway Gothic One to override Bootstrap Default */
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+
+
+
+body {
+	font-family: 'Pathway Gothic One', normal !important;
+	/* background: #FFFFFF	!important; */
+	
+}
+
+
+
+
+.jumbotron {
+	/* Override jumbotron background color */
+	background-color: #FFFFFF !important;
+	/* background-color:#D82E26 !important; */
+	/* border-bottom-width:3px; */
+	/* border-bottom-color: 000000; */
+	/* border-style:solid; */
+	
+}
+
+img.png{
+	width:10%;
+	height:10%;
+}
+.header {
+	color:#000000 !important;
+	text-align: center;
+	
+}
+
+
+/* Train Schedule */
+.schedule-header {
+	background-color: #003152 !important;
+	border-width:3px;
+	border-color: white;
+	/* border-style: dotted; */
+}
+
+
+/* Form Field */
+.form-header {
+	background-color: #003152 !important;
+	color: white;
+	border-width:3px;
+	border-color: white;
+	/* border-style: dotted; */
+	
+}
+
+.card-body {
+		border-width:3px;
+		border-color: white;
+		color: white;
+		/* border-style: dotted; */
+	}
+
+
+
+.button-add {
+	-webkit-transition-duration: 0.4s; /* Safari */
+  	transition-duration: 0.4s;
+	background-color: #1034A6;
+	color: white;
+	border-width: 2px;
+	/* border-style: dotted; */
+	border-color: white;
+	
+	
+}
+
+.button-add:hover {
+	background-color:#D82E26; 
+	color: white;
+	border-width: 2px;
+	/* border-style: dotted; */
+	border-color: white;
+  }
+
+  /* .button-delete {
+	width:  25px;
+	height: 25px;
+  } */
+
+
+  .floating-action-button, ul, li, a {
+	  margin: 5px;
+	  float: left;
+  }
+
+  .center-align {
+	  margin-left: 35%
+  }
+
+  .mobile-fab-tip {
+	position: fixed;
+	right: 85px;
+	padding:0px 0.5rem;
+	text-align: right;
+	background-color: #323232;
+	border-radius: 2px;
+	color: #FFF;
+	width:auto;
+}
+.backdrop {
+	background-color:transparent !important;
+	opacity:0.3;
+}
+.material-tooltip {
+	color:black;
+
+
+}
+
+/* .fixed-action-btn ul {
+	position: inherit;
+} */

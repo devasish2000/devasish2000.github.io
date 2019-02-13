@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" />
+    <link rel="stylesheet" type="text/css" href="../gui/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../gui/assets/css/style-reg.css">
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Fixed Action Button  -->
+    <div class="fixed-action-btn vertical" style="bottom: 45px; right: 24px;">
+        <a href="../dev_app/registration.html" class="waves-effect waves-light btn-floating btn-large black tooltipped"
+            data-position="left" data-tooltip="Account"><i class="material-icons">account_circle</i>
+
+        </a>
+        <ul>
+            <li><a href="../location/location.html" class="waves-effect waves-light btn-floating btn-large black tooltipped"
+                    data-position="left" data-tooltip="Location"><i class="material-icons">location_on</i></a></li>
+            
+                    <li><a href="../location/appt.html" class="waves-effect waves-light btn-floating btn-large black tooltipped"
+                    data-position="left" data-tooltip="Calendar"><i class="material-icons">date_range</i></a></li>
+            
+                    <li><a href="../gui/index.html"class="waves-effect waves-light btn-floating btn-large black tooltipped" data-position="left"
+                    data-tooltip="About Us"><i class="material-icons">child_care</i></a></li>
+        </ul>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Incomplete!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Please complete the entire form before submitting your appointment to the schedule.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid header">
+                <h1 class="display-6"><strong>quemador</strong></h1>
+
+            <div class="container">
+                <h1 class="display-3">
+
+                    <!-- logo area -->
+                    <div id="png" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 224 224" style="mix-blend-mode: normal">
+
+                        <img src="../gui/assets/images/Quemadorlogo.png" class="png.Img"></div>
+                    <p class="lead">We got you covered while your device is being repaired!</p>
+                    <h5 class="currentTime"></h5>
+                </h1>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Shop Name</th>
+                        <th scope="col">Shop Address</th>
+                        <th scope="col">Appt. Time</th>
+                        <th scope="col">Device Type</th>
+                        <th scope="col">Damage Desc.</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody id="trainTable">
+
+                </tbody>
+            </table>
+        </div>
+
+        <br><br>
+
+        <div class="train card" style="width: 100%; margin-bottom: 25px;">
+            <div class="card-header bg-primary text-light">
+                Add Repair
+            </div>
+            <br>
+            <form class="mx-auto" style="width: 98%; margin-bottom: 15px;">
+                <div class="form-group">
+                    <label for="nameInput">Shop Name</label>
+                    <input type="name" class="form-control" id="nameInput" placeholder="Phone Repair Hut">
+                </div>
+                <div class="form-group">
+                    <label for="destinationInput">Address</label>
+                    <input type="role" class="form-control" id="destinationInput" placeholder="5555 Main St">
+                </div>
+                <div class="form-group">
+                    <label for="dateInput">Appt. Time</label>
+                    <input class="form-control" type="time" value="12:00" id="dateInput">
+                </div>
+                <div class="form-group">
+                    <label for="freqInput">Device Type</label>
+                    <input type="rate" class="form-control" id="freqInput" placeholder="iPhone 6s">
+                </div>
+                <div class="form-group">
+                    <label for="damageInput">Damage Description</label>
+                    <input type="text" class="form-control" id="damageInput" placeholder="Briefly describe the damage">
+                </div>
+                <button type="button" class="addTrain btn btn-primary float-right">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDz630PzDtUl642k6q-R_nZgd9dzQn-Iao",
+            authDomain: "projectx-f4363.firebaseapp.com",
+            databaseURL: "https://projectx-f4363.firebaseio.com",
+            projectId: "projectx-f4363",
+            storageBucket: "projectx-f4363.appspot.com",
+            messagingSenderId: "382252244279"
+        };
+
+        firebase.initializeApp(config);
+
+
+        let database = firebase.database()
+
+        const diff_mins = (start, freq) => {
+            var minDiff = Math.abs(moment(start, "HH:mm").diff(moment(), 'minutes')) % freq - freq;
+            return Math.abs(minDiff)
+        }
+
+        const render = (snapshot) => {
+            if (snapshot.val().name != null) {
+                let diff = diff_mins(snapshot.val().date, snapshot.val().freq)
+                let arrival = moment().add(diff, 'minutes').format("HH:mm")
+
+                let apptTr = $(`<tr id="${snapshot.key}">`)
+                let nameTd = $("<td>").text(snapshot.val().name);
+                let destTd = $("<td>").text(snapshot.val().dest);
+                let dateTd = $("<td>").text(snapshot.val().date);
+                let deviceTd = $("<td>").text(snapshot.val().dev);
+                let damageTd = $("<td>").text(snapshot.val().dam);
+                let delAppt = $(`<button class='delete btn btn-danger' data='${snapshot.key}'>`).text("x")
+
+                apptTr.append(nameTd, destTd, dateTd, deviceTd, damageTd, delAppt)
+                $("#trainTable").append(apptTr)
+            } else {
+                return
+            }
+        }
+
+        $(".addTrain").on("click", function (event) {
+            event.preventDefault()
+
+            let tName = $("#nameInput").val()
+            let tDest = $("#destinationInput").val()
+            let tDate = $("#dateInput").val()
+            let device = $("#freqInput").val()
+            let damage = $("#damageInput").val()
+
+            if (tName != "" && tDest != "" && tDate != "" && damage != "" && device != "") {
+                database.ref().push({
+                    name: tName,
+                    dest: tDest,
+                    date: tDate,
+                    dev: device,
+                    dam: damage
+                }).key;
+            } else {
+                $(".modal").modal('toggle')
+            }
+        })
+
+        $(document).on("click", ".delete", function () {
+            $(`#${$(this).attr("data")}`).empty()
+            database.ref().child($(this).attr("data")).remove()
+        })
+
+        database.ref().on(
+            'child_added',
+            function (snapshot) {
+                if (snapshot.val().apptStore != null && snapshot.val().apptAddress != null) {
+                    render(snapshot)
+                } else {
+                    render(snapshot)
+                }
+            },
+            function (errorObject) {
+                console.log("the read failed: " + errorObject.code);
+            })
+
+        var s = localStorage.getItem('store');
+        var a = localStorage.getItem('address');
+        $("#nameInput").val(s)
+        $("#destinationInput").val(a)       
+
+        // database.ref().on(
+        //     'value',
+        //     function (snapshot) {
+        //         if (snapshot.val().apptStore != null && snapshot.val().apptAddress != null) {
+        //             $("#nameInput").val(snapshot.val().apptStore)
+        //             $("#destinationInput").val(snapshot.val().apptAddress)
+        //             database.ref().child("apptStore").remove()
+        //             database.ref().child("apptAddress").remove()
+        //         } else {
+        //             return
+        //         }
+        //     },
+        //     function (errorObject) {
+        //         console.log("the read failed: " + errorObject.code);
+        //     })
+    </script>
+</body>
+
+</html>
