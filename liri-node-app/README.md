@@ -25,7 +25,7 @@ lists dependent node packages, but for your convenvice, these are the ones to in
 
 `npm install fs`
   
-  https://devasish2000.github.io/lirijsscreensht/Screenshot%202019-03-01%2002.48.30.png
+   
   
 
 ### Simple Node Logger
@@ -62,6 +62,8 @@ https://devasish2000.github.io/lirijsscreensht/Screenshot%202019-03-01%2002.44.4
 Gets random text inside a file and does what it says:
 
 `node liri.js do-what-it-says`
+
+https://devasish2000.github.io/lirijsscreensht/Screenshot%202019-03-01%2002.48.30.png
 
 spotify-this-song,'i want it that way'
 
