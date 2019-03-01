@@ -41,6 +41,7 @@ Here's a quick rundom of the commands you can use in LIRI.
 Retrieves up to your latest 20 tweets:
 
 `node liri.js my-tweets`
+https://devasish2000.github.io/lirijsscreens/Screenshot%202019-03-01%2002.41.54.png
  
 ### Get Song Info
 
