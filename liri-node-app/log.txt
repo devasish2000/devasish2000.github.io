@@ -1,0 +1,88 @@
+14:06:20.796 INFO  Artist: Ace of Base 
+14:06:20.796 INFO  Song: The Sign 
+14:06:20.796 INFO  Spotify Preview URL: https://p.scdn.co/mp3-preview/5ca0168d6b58e0f993b2b741af90ecc7c9b16893?cid=null 
+14:06:20.796 INFO  Album Name: Greatest Hits 
+14:06:36.833 INFO  Artist(s): Tribal Seeds 
+14:06:36.834 INFO  Song: In Your Eyes 
+14:06:36.834 INFO  Spotify Preview URL: https://p.scdn.co/mp3-preview/64522d26cd34b251fb5d9753338586ac60e8886c?cid=null 
+14:06:36.834 INFO  Album Name: SoundWaves EP 
+14:06:50.441 INFO  Tweet Text: @MegginKearney Any blog about it please? Interested to know how did you do it? 
+14:06:50.441 INFO  Tweet Creation Date: Tue Apr 04 07:08:40 +0000 2017 
+14:06:50.442 INFO  Tweet Text: RT @MegginKearney: Today I took over 1 second off the load time for an internal site. Almost giddy. More seconds to go! 
+14:06:50.442 INFO  Tweet Creation Date: Tue Apr 04 06:32:35 +0000 2017 
+14:06:50.442 INFO  Tweet Text: @MegginKearney @dalmaer 🙌💕 
+14:06:50.442 INFO  Tweet Creation Date: Tue Apr 04 03:17:11 +0000 2017 
+14:06:50.442 INFO  Tweet Text: https://t.co/qME9TfGYi9 ht @MegginKearney 
+14:06:50.442 INFO  Tweet Creation Date: Mon Apr 03 18:13:09 +0000 2017 
+14:07:03.593 INFO  Movie Title: Mr. Nobody 
+14:07:03.593 INFO  Release Year: 2009 
+14:07:03.593 INFO  IMDB Rating: 7.9 
+14:07:03.593 INFO  Country Produced In: Belgium, Germany, Canada, France 
+14:07:03.593 INFO  Language: English, Mohawk 
+14:07:03.593 INFO  Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible. 
+14:07:03.593 INFO  Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham 
+14:07:03.593 INFO  Rotten Tomatoes Rating: 63/100 
+14:07:03.593 INFO  Rotten Tomatoes URL: http://www.rottentomatoes.com/m/mr-nobody/ 
+14:07:16.714 INFO  Movie Title: Rogue One 
+14:07:16.714 INFO  Release Year: 2016 
+14:07:16.714 INFO  IMDB Rating: 8.0 
+14:07:16.714 INFO  Country Produced In: USA, UK 
+14:07:16.714 INFO  Language: English 
+14:07:16.714 INFO  Plot: The Rebel Alliance makes a risky move to steal the plans for the Death Star, setting up the epic saga to follow. 
+14:07:16.714 INFO  Actors: Felicity Jones, Diego Luna, Alan Tudyk, Donnie Yen 
+14:07:16.714 INFO  Rotten Tomatoes Rating: 65/100 
+14:07:16.714 INFO  Rotten Tomatoes URL: http://www.rottentomatoes.com/m/star_wars_anthology_rogue_one/ 
+14:07:33.469 INFO  Artist(s): Backstreet Boys 
+14:07:33.470 INFO  Song: I Want It That Way 
+14:07:33.470 INFO  Spotify Preview URL: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=null 
+14:07:33.470 INFO  Album Name: The Hits--Chapter One 
+18:16:15.426 INFO  Tweet Text: @MegginKearney Wet socks/shoes are the ick. Good for you for training! 
+18:16:15.427 INFO  Tweet Creation Date: Fri Feb 15 23:38:31 +0000 2019 
+10:41:45.279 INFO  Tweet Text: @MegginKearney Wet socks/shoes are the ick. Good for you for training! 
+10:41:45.280 INFO  Tweet Creation Date: Fri Feb 15 23:38:31 +0000 2019 
+10:52:55.627 INFO  Tweet Text: @MegginKearney Wet socks/shoes are the ick. Good for you for training! 
+10:52:55.628 INFO  Tweet Creation Date: Fri Feb 15 23:38:31 +0000 2019 
+12:19:17.335 INFO  Tweet Text: @MegginKearney Wet socks/shoes are the ick. Good for you for training! 
+12:19:17.335 INFO  Tweet Creation Date: Fri Feb 15 23:38:31 +0000 2019 
+12:25:11.022 INFO  Movie Title: The StarWars Adventures 
+12:25:11.022 INFO  Release Year: 2016– 
+12:25:11.023 INFO  IMDB Rating: N/A 
+12:25:11.023 INFO  Country Produced In: UK 
+12:25:11.023 INFO  Language: English 
+12:25:11.023 INFO  Plot: After splitting the Battalion into four companies, Thunder Company, under the command of Captain Mandeville,was sent to investigate Decks 300 to 600. To achieve this in the quickest ... 
+12:25:11.024 INFO  Actors: Ron Arthurs, Jonathan Beetles, Jake Gosden, Matt Jackson 
+12:25:38.209 INFO  Tweet Text: @MegginKearney Wet socks/shoes are the ick. Good for you for training! 
+12:25:38.209 INFO  Tweet Creation Date: Fri Feb 15 23:38:31 +0000 2019 
+12:25:57.384 INFO  Movie Title: The StarWars Adventures 
+12:25:57.384 INFO  Release Year: 2016– 
+12:25:57.384 INFO  IMDB Rating: N/A 
+12:25:57.385 INFO  Country Produced In: UK 
+12:25:57.385 INFO  Language: English 
+12:25:57.385 INFO  Plot: After splitting the Battalion into four companies, Thunder Company, under the command of Captain Mandeville,was sent to investigate Decks 300 to 600. To achieve this in the quickest ... 
+12:25:57.385 INFO  Actors: Ron Arthurs, Jonathan Beetles, Jake Gosden, Matt Jackson 
+12:48:20.789 INFO  Movie Title: The StarWars Adventures 
+12:48:20.789 INFO  Release Year: 2016– 
+12:48:20.789 INFO  IMDB Rating: N/A 
+12:48:20.789 INFO  Country Produced In: UK 
+12:48:20.789 INFO  Language: English 
+12:48:20.789 INFO  Plot: After splitting the Battalion into four companies, Thunder Company, under the command of Captain Mandeville,was sent to investigate Decks 300 to 600. To achieve this in the quickest ... 
+12:48:20.789 INFO  Actors: Ron Arthurs, Jonathan Beetles, Jake Gosden, Matt Jackson 
+00:59:06.822 INFO  Tweet Text: RT @sfhtml5: If you missed Friday's great talk by @MegginKearney about https://t.co/PL2gHqMw2L, check it our on our YouTube channel and sub… 
+00:59:06.823 INFO  Tweet Creation Date: Sun Feb 24 19:52:45 +0000 2019 
+00:59:06.823 INFO  Tweet Text: If you missed Friday's great talk by @MegginKearney about https://t.co/PL2gHqMw2L, check it our on our YouTube chan… https://t.co/abEA7929kn 
+00:59:06.823 INFO  Tweet Creation Date: Sun Feb 24 19:51:59 +0000 2019 
+00:59:06.823 INFO  Tweet Text: RT @peterlubbers: Full house for ⁦@MegginKearney⁩’s SFHTML5 talk about https://t.co/IlpzXIIbOa! https://t.co/vkXRf475v4 
+00:59:06.823 INFO  Tweet Creation Date: Sat Feb 23 18:09:08 +0000 2019 
+00:59:06.823 INFO  Tweet Text: RT @sfhtml5: Thrilled to have @MegginKearney speak at our next event on Feb 22:
+https://t.co/M7fCk5f9mU
+Sign up now! 
+00:59:06.823 INFO  Tweet Creation Date: Sat Feb 23 03:52:27 +0000 2019 
+00:59:06.823 INFO  Tweet Text: Full house for ⁦@MegginKearney⁩’s SFHTML5 talk about https://t.co/IlpzXIIbOa! https://t.co/vkXRf475v4 
+00:59:06.824 INFO  Tweet Creation Date: Sat Feb 23 02:51:28 +0000 2019 
+01:00:52.219 INFO  Movie Title: Star 
+01:00:52.219 INFO  Release Year: 2001 
+01:00:52.220 INFO  IMDB Rating: 7.8 
+01:00:52.220 INFO  Country Produced In: USA 
+01:00:52.220 INFO  Language: English 
+01:00:52.220 INFO  Plot: The Driver now carries an arrogant rock star who is visiting a major city (not Pittsburgh as earlier believed). Played by Madonna, this title character wants to get away from her bodyguards... 
+01:00:52.220 INFO  Actors: Clive Owen, Michael Beattie, Toru Tanaka Jr., DTeflon 
