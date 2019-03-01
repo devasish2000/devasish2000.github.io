@@ -41,7 +41,7 @@ Here's a quick rundom of the commands you can use in LIRI.
 Retrieves up to your latest 20 tweets:
 
 `node liri.js my-tweets`
-https://devasish2000.github.io/lirijsscreensht/Screenshot%202019-03-01%2002.44.45.png
+ 
 ### Get Song Info
 
 Retrieves song information for a track:
@@ -52,7 +52,9 @@ Retrieves song information for a track:
 
 Retrieves movie information for a movie:
 
-`node liri.js movie-this "Star Wars"`
+`node liri.js movie-this "Star Wars"
+
+https://devasish2000.github.io/lirijsscreensht/Screenshot%202019-03-01%2002.44.45.png
 
 ### Get Random Info
 
