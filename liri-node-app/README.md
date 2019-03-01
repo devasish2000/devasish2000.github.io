@@ -24,8 +24,7 @@ lists dependent node packages, but for your convenvice, these are the ones to in
 ### FS
 
 `npm install fs`
-![alt text] (https://github.com/devasish2000/devasish2000.github.io/blob/master/liri-jsscreensht/Screenshot%202019-03-01%2002.48.30.png)
-
+  ![Screenshot](Screenshot 2019-03-01 02.48.30.png)
 
 ### Simple Node Logger
 
