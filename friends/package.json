@@ -1,0 +1,24 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clsavino/Friend-Finder---Node-and-Express-Servers.git"
+  },
+  "author": "Christi Savino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clsavino/Friend-Finder---Node-and-Express-Servers/issues"
+  },
+  "homepage": "https://github.com/clsavino/Friend-Finder---Node-and-Express-Servers#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
